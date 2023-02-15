@@ -5,6 +5,7 @@ private:
     bool empty;
     bool boiled;
 public:
+    ChocolateBoiler();
     void fill();
     void drain();
     void boil();
