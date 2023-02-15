@@ -2,19 +2,10 @@
 #include <iostream>
 using namespace std;
 
-ChocolateBoiler* ChocolateBoiler::uniqueInstance = 0;
-
 ChocolateBoiler::ChocolateBoiler()
 {
     empty = true;
     boiled = false;
-}
-
-ChocolateBoiler* ChocolateBoiler::getInstance() {
-    if (uniqueInstance == nullptr) {
-        uniqueInstance = new ChocolateBoiler();
-    }
-    return uniqueInstance;
 }
 
 void ChocolateBoiler::fill() {
